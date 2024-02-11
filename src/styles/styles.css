@@ -1,0 +1,183 @@
+/*Header styles start*/
+header {
+  width: 100%;
+  padding: 10px 0;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .contacts {
+  width: 200px;
+}
+
+header .contact-methods ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  color: #006edf;
+}
+
+header .contact-methods ul .contact {
+  display: flex;
+  gap: 5px;
+}
+
+header .contact-methods a {
+  color: inherit;
+}
+header .contact-methods a:hover {
+  text-decoration: underline;
+}
+
+header .contact-methods a.contact:nth-child(3) {
+  text-decoration: none;
+}
+header .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+header .social-links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+header .social-links .link {
+  color: rgba(0, 0, 0, 0.4);
+  transition: color 0.7s;
+}
+header .social-links .link:hover {
+  color: rgba(0, 0, 0, 1);
+}
+header .social-links .link a {
+  color: inherit;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-top: 8px;
+}
+
+header nav .logo {
+  width: 100px;
+}
+header nav .logo img {
+  width: 100%;
+}
+
+header nav .menu-icon {
+  position: absolute;
+  color: #006edf;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transform: translateY(50%);
+}
+
+header nav .menu {
+  position: fixed;
+  background-color: #191919;
+  width: 160px;
+  height: 100vh;
+  right: -160px;
+  top: 0;
+  transition: transform 0.5s;
+  z-index: 5;
+}
+
+header nav .menu span {
+  display: block;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a6a6a6;
+  margin: 16px 16px 25px 16px;
+  text-align: right;
+  cursor: pointer;
+}
+
+header nav .menu li {
+  display: block;
+  padding: 8px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header nav .menu li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header nav .menu li a {
+  color: #a6a6a6;
+  padding: 8px 12px;
+}
+header nav .menu li a:hover {
+  color: white;
+}
+header nav .menu li a.focused {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  header .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+  }
+
+  header .social-links ul {
+    margin: 0;
+  }
+
+  header nav .logo {
+    width: 100px;
+    align-self: center;
+  }
+  header nav .menu-icon {
+    display: none;
+  }
+  header nav .menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    right: 0;
+  }
+  header nav .menu span {
+    display: none;
+  }
+
+  header nav .menu li {
+    display: inline-block;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  header nav .menu li:last-child {
+    border-right: none;
+  }
+  header nav .menu li a:hover {
+    color: #006edf;
+  }
+  header nav .menu li a.focused {
+    color: #006edf;
+  }
+}
+/*Header styles end*/
+
+/* Hero section start*/
+.hero-section {
+  height: 500px;
+  width: 100%;
+  background-color: #e8eced;
+}
+/* Hero section end*/
